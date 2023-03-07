@@ -1,0 +1,164 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Hanken Grotesk', sans-serif
+
+body
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+
+.attribution
+  margin-top: 30px
+
+.container
+  display: flex
+  max-width: 650px
+
+  @media (max-width: 700px)
+    flex-direction: column
+    width: 90%
+  
+  &-card
+    width: 45%
+    padding: 30px
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%))
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    border-radius: 30px
+    position: relative
+    right: -50px
+
+    @media (max-width: 700px)
+      right: 0px
+      bottom: -50px
+      width: 100%
+    
+
+    &-title
+      font-weight: 500
+      color: hsla(221, 100%, 96%, 85%)
+      font-size: 20px
+      margin-bottom: 1.2rem
+
+    .circle-result
+      background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))
+      padding: 35px 50px
+      border-radius: 50%
+
+      .circle-result-data
+        color: hsl(0, 0%, 100%)
+        text-align: center
+        font-size: 60px
+        font-weight: 800
+
+      .circle-result-meta
+        text-align: center
+        color: hsla(221, 100%, 96%, 50%)
+    
+    &-subtitle
+      color: hsl(0, 0%, 100%)
+      font-size: 26px
+      text-align: center
+      margin-bottom: 5px
+    
+    &-text
+      text-align: center
+      color: hsla(221, 100%, 96%, 75%)
+      margin-bottom: 12px
+
+
+  &-data
+    padding: 30px 30px 30px 80px
+    width: 55%
+    box-shadow: hsla(252, 100%, 67%,30%) 0px 48px 100px 0px
+    border-radius: 30px
+
+    @media (max-width: 700px)
+      width: 100%
+      padding: 80px 30px 30px 30px
+
+    .last-child
+      margin-bottom: 30px
+
+    .reaction
+        background-color: hsla(0, 100%, 67%, 10%)
+
+        .card-title
+          color: hsl(0, 100%, 67%)
+
+    .memory
+        background-color: hsla(39, 100%, 56%, 10%)
+
+        .card-title
+          color: hsl(39, 100%, 56%)
+
+    .verbal
+        background-color: hsla(166, 100%, 37%, 10%)
+
+        .card-title
+          color: hsl(166, 100%, 37%)
+
+    .visual
+        background-color: hsla(234, 85%, 45%, 10%)
+
+        .card-title
+          color: hsl(234, 85%, 45%)
+
+    &-title
+      font-weight: 800
+      color: hsl(224, 30%, 27%)
+      font-size: 20px
+      margin-bottom: 1.2rem
+
+    &-card
+      display: flex
+      justify-content: space-between
+      align-items: center
+      background-color: rgba(0,0,0,0.3)
+      padding: 15px 10px
+      margin: 10px 0
+      border-radius: 10px
+
+
+      .card-title
+        font-size: 18px
+        display: flex
+        align-items: center
+
+        span
+          width: 18px
+          height: 18px
+          margin-right: 10px
+
+      .card-info
+        color:  hsl(224, 30%, 10%)
+        font-weight: bold
+
+        span
+          color:  hsla(224, 30%, 10%, 50%)
+
+  .btn
+    padding: 13px 38%
+    background-color: hsl(224, 30%, 27%)
+    border: none
+    outline: none
+    border-radius: 26px
+    font-size: 16px
+    color: white
+    transition: .5s
+    cursor: pointer
+
+
+    &:hover
+      background: linear-gradient(hsla(241deg, 72%, 46%, 0.75), hsla(256deg, 72%, 46%, 1))
+
+
+    
+

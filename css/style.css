@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.attribution {
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  max-width: 650px;
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+.container-card {
+  width: 45%;
+  padding: 30px;
+  background: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  position: relative;
+  right: -50px;
+}
+@media (max-width: 700px) {
+  .container-card {
+    right: 0px;
+    bottom: -50px;
+    width: 100%;
+  }
+}
+.container-card-title {
+  font-weight: 500;
+  color: hsla(221deg, 100%, 96%, 0.85);
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+}
+.container-card .circle-result {
+  background: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  padding: 35px 50px;
+  border-radius: 50%;
+}
+.container-card .circle-result .circle-result-data {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+}
+.container-card .circle-result .circle-result-meta {
+  text-align: center;
+  color: hsla(221deg, 100%, 96%, 0.5);
+}
+.container-card-subtitle {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.container-card-text {
+  text-align: center;
+  color: hsla(221deg, 100%, 96%, 0.75);
+  margin-bottom: 12px;
+}
+.container-data {
+  padding: 30px 30px 30px 80px;
+  width: 55%;
+  box-shadow: hsla(252deg, 100%, 67%, 0.3) 0px 48px 100px 0px;
+  border-radius: 30px;
+}
+@media (max-width: 700px) {
+  .container-data {
+    width: 100%;
+    padding: 80px 30px 30px 30px;
+  }
+}
+.container-data .last-child {
+  margin-bottom: 30px;
+}
+.container-data .reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.1);
+}
+.container-data .reaction .card-title {
+  color: hsl(0deg, 100%, 67%);
+}
+.container-data .memory {
+  background-color: hsla(39deg, 100%, 56%, 0.1);
+}
+.container-data .memory .card-title {
+  color: hsl(39deg, 100%, 56%);
+}
+.container-data .verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.1);
+}
+.container-data .verbal .card-title {
+  color: hsl(166deg, 100%, 37%);
+}
+.container-data .visual {
+  background-color: hsla(234deg, 85%, 45%, 0.1);
+}
+.container-data .visual .card-title {
+  color: hsl(234deg, 85%, 45%);
+}
+.container-data-title {
+  font-weight: 800;
+  color: hsl(224deg, 30%, 27%);
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+}
+.container-data-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.container-data-card .card-title {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.container-data-card .card-title span {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.container-data-card .card-info {
+  color: hsl(224deg, 30%, 10%);
+  font-weight: bold;
+}
+.container-data-card .card-info span {
+  color: hsla(224deg, 30%, 10%, 0.5);
+}
+.container .btn {
+  padding: 13px 38%;
+  background-color: hsl(224deg, 30%, 27%);
+  border: none;
+  outline: none;
+  border-radius: 26px;
+  font-size: 16px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.container .btn:hover {
+  background: linear-gradient(hsla(241deg, 72%, 46%, 0.75), hsl(256deg, 72%, 46%));
+}
+
+/*# sourceMappingURL=style.css.map */
